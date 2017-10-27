@@ -32,36 +32,64 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    /**
+     * Adds 3 points to Team A score
+     * @param view
+     */
     public void add3Points(View view){
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
+    /**
+     * Adds 2 points to Team A score
+     * @param view
+     */
     public void add2Points(View view){
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
 
+    /**
+     * Adds 1 points to Team A score
+     * @param view
+     */
     public void add1Point(View view){
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
 
+    /**
+     * Adds 3 points to Team B score
+     * @param view
+     */
     public void add3PointsB(View view){
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Adds 2 points to Team B score
+     * @param view
+     */
     public void add2PointsB(View view){
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Adds 1 points to Team B score
+     * @param view
+     */
     public void add1PointB(View view){
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Resets both scores
+     * @param view
+     */
     public void resetScores(View view){
         scoreTeamA = 0;
         displayForTeamA((scoreTeamA));
